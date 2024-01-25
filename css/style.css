@@ -26,7 +26,6 @@ body {
 nav{
     background-color: var(--light-grey);
     color: var(--lightest-grey);
-    font-weight: 700;
     margin: 0;
 }
 
@@ -38,18 +37,20 @@ nav ul{
     justify-content: space-between;
     margin: 3rem auto 0;
     max-width: 1260px;
+    flex-wrap: wrap;
 }
 
-nav li{
-    background-color: var(--blue-grey);
-}
-
-nav a{
+nav button{
     text-decoration: none;
     display: inline-block;
     padding: 1.5rem 4.2rem;
     color: var(--white);
     font-size: 1.2rem;   
+    border: none;
+    background-color: var(--blue-grey);
+    font-family: var(--font);
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .current{
@@ -62,6 +63,7 @@ main h2 {
     font-weight: 700;
     padding: 0;
     margin: 0;
+    color: var(--blue-grey);
 }
 
 main p {
